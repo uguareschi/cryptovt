@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  @responsive {
+    .subtitle {
+      @apply font-Gotham text-2xl leading-30px;
+    }
+    .title {
+      @apply font-Arturito-Slab font-semibold text-28px leading-35px;
+    }
+    .main-title {
+      @apply font-Arturito-Slab text-40px leading-45px font-bold;
+    }
+
+    .buttons {
+      @apply font-medium text-15px leading-22px;
+    }
+    .arturito-regular {
+      @apply font-Arturito-Slab text-15px leading-22px;
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply text-15px leading-22px font-Gotham text-white  min-h-screen bg-deep-blue;
+  }
+  html {
+    height: -webkit-fill-available;
+  }
+}

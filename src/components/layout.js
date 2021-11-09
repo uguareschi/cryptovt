@@ -1,55 +1,81 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useState, useEffect } from "react"
 
-import Header from "./header"
-import "./layout.css"
+import logo from "../images/brand/logo.svg"
+import { Link } from "gatsby"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+  const [scrolling, setScrolling] = useState(true)
+  const [scrollTop, setScrollTop] = useState(0)
+  // Watch if scroll Down or Up
+  useEffect(() => {
+    function onScroll() {
+      let currentPosition = window.pageYOffset
+      if (currentPosition > scrollTop && currentPosition > 180) {
+        // downscroll code
+        setScrolling(false)
+      } else {
+        // upscroll code
+        setScrolling(true)
       }
+      setScrollTop(currentPosition <= 0 ? 0 : currentPosition)
     }
-  `)
+
+    window.addEventListener("scroll", onScroll)
+
+    return () => {
+      window.removeEventListener("scroll", onScroll)
+    }
+  }, [scrollTop])
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+      <nav
+        className={`${
+          !scrolling && "-translate-y-177px md:-translate-y-151px"
+        } fixed top-0 z-40 w-full transform transition-transform ease-in-out duration-300 delay-500 bg-orange flex justify-center`}
       >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+        <div className="mx-auto flex flex-col justify-center items-center mt-10 md:flex-row md:justify-between md:mx-10 md:my-10 max-w-5xl w-full">
+          <Link to="/">
+            <img src={logo} alt="Humanvoices" className="py-5 mb-6 md:mb-0" />
+          </Link>
+
+          <div className="space-x-4 font-Arturito-Slab font-bold text-17px text-nav-btn mb-5 md:mb-0">
+            <Link
+              to="/"
+              className="hover:text-white border-b-2 border-transparent hover:border-white"
+            >
+              Inicio
+            </Link>
+            <Link
+              className="hover:text-white border-b-2 border-transparent hover:border-white"
+              to="/conferencias"
+            >
+              Conferencias
+            </Link>
+            <Link
+              className="hover:text-white border-b-2 border-transparent hover:border-white"
+              to="/contactos"
+            >
+              Contactos
+            </Link>
+          </div>
+        </div>
+      </nav>
+      <main className="max-w-5xl mx-auto mt-177px md:mt-151px w-full">
+        {children}
+      </main>
+      <footer className="mt-auto">
+        <div className="max-w-5xl mx-auto flex flex-col sm:py-15">
+          <div className="m-8 sm:mb-0 border-t border-white flex flex-col text-white sm:flex-row sm:items-center sm:justify-end sm:pt-4">
+            <span className="buttons">
+              ©2021 CryptoVT. All rights reserved.
+            </span>
+          </div>
+        </div>
+      </footer>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
