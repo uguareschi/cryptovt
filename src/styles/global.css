@@ -20,6 +20,24 @@
     .arturito-regular {
       @apply font-Arturito-Slab text-15px leading-22px;
     }
+    .block-one {
+      background: linear-gradient(
+          180deg,
+          #2076ff 0%,
+          rgba(52, 161, 253, 0) 51.73%,
+          #2076ff 100%
+        ),
+        url("../images/block-one.png");
+      background-blend-mode: normal, soft-light;
+    }
+  }
+  .hero-gradient {
+    background: linear-gradient(
+      180deg,
+      #f86623 2.6%,
+      #8a2eff 44.27%,
+      #2076ff 100%
+    );
   }
 }
 

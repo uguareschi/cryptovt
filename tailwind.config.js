@@ -41,6 +41,7 @@ module.exports = {
         7: "1.875rem",
         13: "3.25rem",
         15: "3.75rem",
+        18: "4.5rem",
         21: "5.25rem",
       },
       height: {
@@ -85,6 +86,7 @@ module.exports = {
         "21px": "1.3125rem",
         "22px": "1.375rem",
         "28px": "1.75rem",
+        "32px": "2rem",
         "40px": "2.5rem",
       },
       lineHeight: {
@@ -97,6 +99,7 @@ module.exports = {
       },
       letterSpacing: {
         "widest-voicemix": "0.3em",
+        "widest-ultra": "0.4em",
       },
       scale: {
         99: ".99",
@@ -122,6 +125,11 @@ module.exports = {
         card: "0 0 0.3rem rgba(0, 0, 0, .2)",
         btn: "0px 4px 4px rgba(0, 0, 0, 0.25)",
         subcard: "0px 0px 4px rgba(0, 0, 0, 0.12)",
+      },
+      backgroundImage: {
+        // "block-one": "url('../images/block-one.png')",
+        "hero-desktop": "url('../images/hero-desktop.png')",
+        "hero-mobile": "url('../images/hero-mobile.png')",
       },
     },
     fontFamily: {
