@@ -72,8 +72,12 @@ const Layout = ({ children }) => {
         <div className="flex justify-between mb-8 max-w-5xl w-full">
           <img src={logoCVT} alt="CVT" />
           <div className="flex space-x-5">
-            <img src={discord} alt="discord" />
-            <img src={instagram} alt="instagram" />
+            <Link to="https://discord.gg/TMun5FtX7y">
+              <img src={discord} alt="discord" />
+            </Link>
+            <Link to="https://www.instagram.com/crypto_vt/">
+              <img src={instagram} alt="instagram" />
+            </Link>
           </div>
         </div>
 

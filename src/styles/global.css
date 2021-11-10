@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Arturito Slab";
+  src: url("../fonts/Arturito_Slab_v2.ttf");
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Medium.otf");
+}
+
 @layer components {
   @responsive {
     .subtitle {
