@@ -7,20 +7,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "red-voicemix": "#FC6562",
-        "blue-voicemix": "#47505e",
-        "blue-link": "#3993DD",
-        "black-hv": "#293845",
-        "deep-purple": "#6D49F1",
-        "neon-blue": "#5f66f2",
-        "sky-blue": "#06c7f2",
-        "caribbean-green": "#05D9B1",
-        "spreen-green": "#05F182",
-        "dark-gray": "#6B7280",
-        "mid-gray": "#A9ADB6",
-        "light-gray": "#F2F3F5",
-
-        // new pallete collor
         "nav-btn": "#D14707",
         "rich-black": "#000505",
         "deep-blue": "#2076FF",
@@ -33,6 +19,7 @@ module.exports = {
       inset: {
         "3px": "3px",
         "13px": "13px",
+        "-148px": "-148px",
       },
       spacing: {
         "15px": "0.9375rem",

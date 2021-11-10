@@ -7,7 +7,8 @@ import discord from "../images/social/discord-footer.svg"
 import instagram from "../images/social/instagram-footer.svg"
 import { Link } from "gatsby"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, data }) => {
+  console.log(data)
   const [scrolling, setScrolling] = useState(true)
   const [scrollTop, setScrollTop] = useState(0)
   // Watch if scroll Down or Up
@@ -47,18 +48,21 @@ const Layout = ({ children }) => {
             <Link
               to="/"
               className="hover:text-white border-b-2 border-transparent hover:border-white"
+              activeClassName="text-white border-white"
             >
               Inicio
             </Link>
             <Link
               className="hover:text-white border-b-2 border-transparent hover:border-white"
               to="/conferencias"
+              activeClassName="text-white border-white"
             >
               Conferencias
             </Link>
             <Link
               className="hover:text-white border-b-2 border-transparent hover:border-white"
               to="/contactos"
+              activeClassName="text-white border-white"
             >
               Contactos
             </Link>

@@ -1,5 +1,14 @@
 import * as React from "react"
-
+import addMultiplyOrange from "../images/hero-vectors/add-multiply-orange.svg"
+import addMultiply from "../images/hero-vectors/add-multiply.svg"
+import arrows from "../images/hero-vectors/arrows.svg"
+import circle from "../images/hero-vectors/circle.svg"
+import grid from "../images/hero-vectors/grid.svg"
+import linesOrange from "../images/hero-vectors/lines-orange.svg"
+import linesWhite from "../images/hero-vectors/lines-white.svg"
+import triangleDotsBlue from "../images/hero-vectors/triangle-dots-blue.svg"
+import triangleDots from "../images/hero-vectors/triangle-dots.svg"
+import web from "../images/hero-vectors/web.svg"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -31,8 +40,61 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <section className="hero-gradient pb-15 px-8 pt-44 w-full">
-      <div className="max-w-5xl w-full flex mx-auto">
-        <div className="md:justify-center md:w-7/12 title md:main-title md:py-15">
+      <div className="max-w-5xl w-full flex mx-auto relative">
+        {/* Vectors on mobile */}
+        <img
+          src={linesOrange}
+          alt="lines"
+          className="absolute -top-148px md:hidden"
+        />
+        <img
+          src={arrows}
+          alt="arrows"
+          className="absolute right-16 rotate-90 transform -top-20 w-4 md:hidden"
+        />
+        <img
+          src={addMultiplyOrange}
+          alt="add"
+          className="absolute -bottom-12  right-10 w-16 transform rotate-90 z-10 md:hidden"
+        />
+        <img
+          src={triangleDotsBlue}
+          alt="triangle"
+          className="absolute -bottom-12 right-0 w-12 md:hidden"
+        />
+        <img
+          src={web}
+          alt="web"
+          className="absolute right-4 -top-28 w-16 md:w-64 md:right-8 md:top-16 z-20"
+        />
+        {/* Vectors on desktop */}
+        <img
+          src={triangleDots}
+          alt="triangle white"
+          className="absolute -top-12 right-0 hidden md:block"
+        />
+        <img
+          src={circle}
+          alt="circle"
+          className="absolute right-0 bottom-0 w-44 z-10 hidden md:block"
+        />
+        <img
+          src={grid}
+          alt="grid"
+          className="absolute right-44 bottom-0 w-36 mb-4 mr-10 z-10 hidden md:block"
+        />
+        <img
+          src={addMultiply}
+          alt="multiply"
+          className="absolute right-44 bottom-0 w-36 mb-4 mr-16 z-10 hidden md:block"
+        />
+        <img
+          src={linesWhite}
+          alt="multiply"
+          className="absolute right-44 top-0 w-36 mb-4 mr-16 z-10 hidden lg:block"
+        />
+
+        <div className="md:justify-center md:w-7/12 title md:main-title md:py-15 z-20">
           CryptoVT busca potenciar y fomentar el uso de crypto. La modalidad del
           evento incluye tanto a quienes están inmersos en este mundo como a
           quienes quieran conocerlo.
