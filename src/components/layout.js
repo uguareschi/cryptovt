@@ -2,6 +2,9 @@ import * as React from "react"
 import { useState, useEffect } from "react"
 
 import logo from "../images/brand/logo.svg"
+import logoCVT from "../images/brand/logo-cvt.svg"
+import discord from "../images/social/discord-footer.svg"
+import instagram from "../images/social/instagram-footer.svg"
 import { Link } from "gatsby"
 
 const Layout = ({ children }) => {
@@ -62,17 +65,21 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </nav>
-      <main className="max-w-5xl mx-auto mt-177px md:mt-151px w-full">
+      <main className="mt-177px md:mt-151px w-full bg-deep-blue md:flex md:flex-col md:justify-center md:items-center">
         {children}
       </main>
-      <footer className="mt-auto">
-        <div className="max-w-5xl mx-auto flex flex-col sm:py-15">
-          <div className="m-8 sm:mb-0 border-t border-white flex flex-col text-white sm:flex-row sm:items-center sm:justify-end sm:pt-4">
-            <span className="buttons">
-              ©2021 CryptoVT. All rights reserved.
-            </span>
+      <footer className="bg-deep-blue py-10 px-8 md:flex md:flex-col md:justify-center md:items-center w-full">
+        <div className="flex justify-between mb-8 max-w-5xl w-full">
+          <img src={logoCVT} alt="CVT" />
+          <div className="flex space-x-5">
+            <img src={discord} alt="discord" />
+            <img src={instagram} alt="instagram" />
           </div>
         </div>
+
+        <span className="buttons block text-center md:text-right border-t border-white pt-2 max-w-5xl w-full">
+          ©2021 CryptoVT. All rights reserved.
+        </span>
       </footer>
     </>
   )
