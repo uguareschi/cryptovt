@@ -23,6 +23,7 @@ module.exports = {
       },
       spacing: {
         "15px": "0.9375rem",
+        "50px": "3.125rem",
         "151px": "9.4375rem",
         "177px": "11.0625rem",
         7: "1.875rem",
@@ -39,6 +40,7 @@ module.exports = {
       },
       width: {
         15: "60px",
+        "405px": "405px",
         fit: "fit-content",
       },
       height: {
@@ -76,8 +78,10 @@ module.exports = {
         "32px": "2rem",
         "38px": "2.375rem",
         "40px": "2.5rem",
+        "44px": "2.75rem",
         "52px": "3.25rem",
         "65px": "4.065rem",
+        "180px": "11.25rem",
       },
       lineHeight: {
         "22px": "1.375rem",
@@ -86,7 +90,10 @@ module.exports = {
         "30px": "1.875rem",
         "35px": "2.1875rem",
         "45px": "2.8125rem",
+        "48px": "3rem",
         "50px": "3.125rem",
+        "65px": "4.0625rem",
+        "140px": "8.75rem",
       },
       letterSpacing: {
         "widest-voicemix": "0.3em",
@@ -125,6 +132,7 @@ module.exports = {
     fontFamily: {
       "Arturito-Slab": ["Arturito Slab"],
       Gotham: ["Gotham"],
+      "Gotham-Book": ["Gotham Book"],
       inter: ["Inter", "Helvetica", "sans-serif"],
       averta: ["Averta", "sans-serif"],
     },

@@ -12,10 +12,15 @@
   src: url("../fonts/Gotham-Medium.otf");
 }
 
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../fonts/Gotham-Book.otf");
+}
+
 @layer components {
   @responsive {
     .subtitle {
-      @apply font-Gotham text-2xl leading-30px;
+      @apply font-Gotham-Book text-2xl leading-30px;
     }
     .title {
       @apply font-Arturito-Slab font-semibold text-28px leading-35px;

@@ -133,22 +133,6 @@ const IndexPage = () => (
         })}
       </div>
     </section>
-    <section className="px-8 py-15 md:py-32 w-full">
-      <div className="max-w-5xl mx-auto">
-        <span className="text-center block title mb-5">Participar</span>
-        <div className="grid gap-5 md:grid-cols-3">
-          <button className="border rounded border-white py-3">
-            Obtener tickets (Gratis)
-          </button>
-          <button className="border rounded border-white py-3">
-            Quiero ser Sponsor
-          </button>
-          <button className="border rounded border-white py-3">
-            Aplicar para exponer
-          </button>
-        </div>
-      </div>
-    </section>
   </Layout>
 )
 
