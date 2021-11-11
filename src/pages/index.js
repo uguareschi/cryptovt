@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import addMultiplyOrange from "../images/hero-vectors/add-multiply-orange.svg"
 import addMultiply from "../images/hero-vectors/add-multiply.svg"
 import arrows from "../images/hero-vectors/arrows.svg"
@@ -125,9 +126,12 @@ const IndexPage = () => (
                 {block.name}
               </span>
               <span>{block.description}</span>
-              <span className="self-end uppercase tracking-widest mt-3">
+              <Link
+                to="/conferencias"
+                className="self-end uppercase tracking-widest mt-3"
+              >
                 ver más {`>`}
-              </span>
+              </Link>
             </div>
           )
         })}

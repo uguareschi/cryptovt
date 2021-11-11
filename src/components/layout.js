@@ -166,7 +166,7 @@ const Layout = ({ children, data }) => {
                   todas las novedades antes que nadie.
                 </span>
                 <a
-                  href="https://www.instagram.com/crypto_vt"
+                  href="https://discord.gg/TMun5FtX7y"
                   className="mt-6 rounded border border-white py-3 text-center md:w-min md:px-6"
                 >
                   Unirse
