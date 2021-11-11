@@ -33,7 +33,7 @@ const Layout = ({ children, data }) => {
   }, [scrollTop])
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col justify-between">
       <nav
         className={`${
           !scrolling && "-translate-y-177px md:-translate-y-151px"
@@ -72,7 +72,7 @@ const Layout = ({ children, data }) => {
       <main className="mt-177px md:mt-151px w-full bg-deep-blue md:flex md:flex-col md:justify-center md:items-center">
         {children}
       </main>
-      <footer className="bg-deep-blue py-10 px-8 md:flex md:flex-col md:justify-center md:items-center w-full">
+      <footer className="bg-deep-blue py-10 px-8 flex flex-col justify-end flex-grow md:items-center w-full">
         <div className="flex justify-between mb-8 max-w-5xl w-full">
           <img src={logoCVT} alt="CVT" />
           <div className="flex space-x-5">
@@ -89,7 +89,7 @@ const Layout = ({ children, data }) => {
           ©2021 CryptoVT. All rights reserved.
         </span>
       </footer>
-    </>
+    </div>
   )
 }
 

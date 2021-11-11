@@ -74,8 +74,10 @@ module.exports = {
         "22px": "1.375rem",
         "28px": "1.75rem",
         "32px": "2rem",
+        "38px": "2.375rem",
         "40px": "2.5rem",
         "52px": "3.25rem",
+        "65px": "4.065rem",
       },
       lineHeight: {
         "22px": "1.375rem",
