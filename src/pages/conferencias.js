@@ -23,7 +23,7 @@ const blocks = [
     number: 2,
     name: "DeFi",
     description:
-      "Bloque de bienvenida al evento e introducción al mundo crypto.",
+      "Bloque relacionado a las finanzas decentralizadas, organizaciones, DAOs y modelos de negocios.",
     hostOne: "Angelo Antonelli",
     hostOneRole: "CEO - Human Voices DAO",
     hostOneDescription:
@@ -37,7 +37,7 @@ const blocks = [
     number: 3,
     name: "NFTs",
     description:
-      "Bloque de bienvenida al evento e introducción al mundo crypto.",
+      "Bloque relacionado a los NFTs (non fungible tokens), crypto games y arte.",
     hostOne: "Angelo Antonelli",
     hostOneRole: "CEO - Human Voices DAO",
     hostOneDescription:
