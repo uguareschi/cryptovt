@@ -3,7 +3,7 @@ module.exports = {
     title: `CryptoVT`,
     description: `CryptoVT busca potenciar y fomentar el uso de crypto. La modalidad del evento incluye tanto a quienes estan inmersos en este mundo como a quienes quieran conocerlo.`,
     author: `Humanvoices`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https:/cryptovt.xyz/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,10 +24,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#F86623`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        // theme_color: `#F86623`,
         display: `minimal-ui`,
         icon: `src/images/cvt-icon.png`, // This path is relative to the root of the site.
       },
