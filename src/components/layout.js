@@ -93,23 +93,29 @@ const Layout = ({ children, data }) => {
                 <div className="absolute w-full h-full flex justify-center items-center  bg-white bg-opacity-70 z-10 rounded-xl text-dark-orange  cursor-not-allowed">
                   Aún no disponibles
                 </div>
-                <button className="rounded-xl py-4 bg-orange w-full filter blur-1.5px">
+                <a className="flex flex-col justify-between items-center rounded-xl py-4 bg-orange w-full filter blur-1.5px">
                   <img src={ticket} alt="ticket" className="mx-auto mb-2" />
                   Obtener tickets (Gratis)
-                </button>
+                </a>
               </div>
-              <button className=" rounded-xl bg-orange  py-4">
+              <a
+                href="mailto:hola.cvt@gmail.com?subject=Quiero ser Sponsor"
+                className="flex flex-col justify-between items-center cursor-pointer rounded-xl bg-orange  py-4"
+              >
                 <img src={flash} alt="flash" className="mx-auto mb-2" />
                 Quiero ser Sponsor
-              </button>
-              <button className=" rounded-xl   bg-orange py-4">
+              </a>
+              <a
+                href="mailto:hola.cvt@gmail.com?subject=Quiero exponer"
+                className="flex flex-col justify-between items-center cursor-pointer rounded-xl   bg-orange py-4"
+              >
                 <img
                   src={personVoice}
                   alt="person voice"
                   className="mx-auto mb-2"
                 />
                 Aplicar para exponer
-              </button>
+              </a>
             </div>
           </div>
         </section>
