@@ -1,6 +1,7 @@
 import * as React from "react"
 import { useState, useEffect } from "react"
-
+import sponsorVMX from "../images/sponsor-vmx.svg"
+import sponsorHV from "../images/sponsor-hv.svg"
 import logo from "../images/brand/logo.svg"
 import logoCVT from "../images/brand/logo-cvt.svg"
 import discord from "../images/social/discord-footer.svg"
@@ -15,7 +16,6 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Layout = ({ children, data }) => {
-  console.log(data)
   const [scrolling, setScrolling] = useState(true)
   const [scrollTop, setScrollTop] = useState(0)
   // Watch if scroll Down or Up
@@ -93,7 +93,10 @@ const Layout = ({ children, data }) => {
                 <div className="absolute w-full h-full flex justify-center items-center  bg-white bg-opacity-70 z-10 rounded-xl text-dark-orange  cursor-not-allowed">
                   Aún no disponibles
                 </div>
-                <a className="flex flex-col justify-between items-center rounded-xl py-4 bg-orange w-full filter blur-1.5px">
+                <a
+                  className="flex flex-col justify-between items-center rounded-xl py-4 bg-orange w-full filter blur-1.5px"
+                  href="mailto:hola.cvt@gmail.com?subject=Quiero exponer"
+                >
                   <img src={ticket} alt="ticket" className="mx-auto mb-2" />
                   Obtener tickets (Gratis)
                 </a>
@@ -181,6 +184,35 @@ const Layout = ({ children, data }) => {
                   className="mt-6 rounded border border-white py-3 text-center md:w-min md:px-6"
                 >
                   Unirse
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="px-8 py-20 md:py-32 w-full">
+          <div className="max-w-5xl mx-auto">
+            <div className="flex flex-col justify-center items-center">
+              <h3 className="title text-sky-blue mb-8">Sponsors Oro</h3>
+              <div className="flex flex-col md:flex-row md:gap-15">
+                <a
+                  href="https://humanvoices.xyz/"
+                  className="flex"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={sponsorHV}
+                    alt="sponsor HumanVoices"
+                    className="mb-8 md:mb-0"
+                  />
+                </a>
+                <a
+                  href="https://voicemix.io/"
+                  target="_blank"
+                  className="flex"
+                  rel="noreferrer"
+                >
+                  <img src={sponsorVMX} alt="sponsor Voicemix" />
                 </a>
               </div>
             </div>
