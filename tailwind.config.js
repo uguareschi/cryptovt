@@ -125,6 +125,9 @@ module.exports = {
         btn: "0px 4px 4px rgba(0, 0, 0, 0.25)",
         subcard: "0px 0px 4px rgba(0, 0, 0, 0.12)",
       },
+      blur: {
+        "1.5px": "1.5px",
+      },
       backgroundImage: {
         "hero-desktop": "url('../images/hero-desktop.png')",
         "hero-mobile": "url('../images/hero-mobile.png')",

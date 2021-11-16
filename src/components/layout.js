@@ -89,10 +89,15 @@ const Layout = ({ children, data }) => {
               <span className="main-title mb-5 md:mb-0">Participar</span>
             </div>
             <div className="grid gap-5 md:grid-cols-3 font-Arturito-Slab font-bold text-22px leading-35px">
-              <button className="rounded-xl py-4 bg-orange">
-                <img src={ticket} alt="ticket" className="mx-auto mb-2" />
-                Obtener tickets (Gratis)
-              </button>
+              <div className="relative">
+                <div className="absolute w-full h-full flex justify-center items-center  bg-white bg-opacity-70 z-10 rounded-xl text-dark-orange  cursor-not-allowed">
+                  Aún no disponibles
+                </div>
+                <button className="rounded-xl py-4 bg-orange w-full filter blur-1.5px">
+                  <img src={ticket} alt="ticket" className="mx-auto mb-2" />
+                  Obtener tickets (Gratis)
+                </button>
+              </div>
               <button className=" rounded-xl bg-orange  py-4">
                 <img src={flash} alt="flash" className="mx-auto mb-2" />
                 Quiero ser Sponsor

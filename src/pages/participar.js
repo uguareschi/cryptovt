@@ -4,7 +4,7 @@ import heroPartDesktop from "../images/hero-vectors/hero-participar-desktop.svg"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const IndexPage = () => (
+const Participar = () => (
   <Layout>
     <Seo title="Participar" />
     <section className="hero-gradient px-8 pt-44 -mb-10 w-full">
@@ -26,4 +26,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default Participar
