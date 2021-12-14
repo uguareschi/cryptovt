@@ -106,10 +106,7 @@ const IndexPage = () => (
       <div className="flex flex-col justify-center items-center py-5 border-t border-b border-white space-y-1 md:space-y-6 max-w-xl mx-auto">
         <span className="title md:main-title">Fecha</span>
         <span className="text-orange font-Arturito-Slab text-32px md:text-52px leading-35px uppercase tracking-widest-ultra">
-          ??/??/21
-        </span>
-        <span className="uppercase leading-22px text-xs md:text-xl tracking-widest">
-          Será descubierta el 12/21
+          20/12/21
         </span>
       </div>
     </section>
