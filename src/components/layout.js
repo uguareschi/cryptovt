@@ -59,13 +59,13 @@ const Layout = ({ children, data }) => {
             >
               Inicio
             </Link>
-            <Link
+            {/* <Link
               className="hover:text-white border-b-2 border-transparent hover:border-white"
               to="/conferencias"
               activeClassName="text-white border-white"
             >
               Conferencias
-            </Link>
+            </Link> */}
             <Link
               className="hover:text-white border-b-2 border-transparent hover:border-white"
               to="/participar"
@@ -189,7 +189,7 @@ const Layout = ({ children, data }) => {
             </div>
           </div>
         </section>
-        <section className="px-8 py-20 md:py-32 w-full">
+        {/* <section className="px-8 py-20 md:py-32 w-full">
           <div className="max-w-5xl mx-auto">
             <div className="flex flex-col justify-center items-center">
               <h3 className="title text-sky-blue mb-8">Sponsors Oro</h3>
@@ -217,7 +217,7 @@ const Layout = ({ children, data }) => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <footer className="bg-deep-blue py-10 px-8 flex flex-col justify-end flex-grow md:items-center w-full">
         <div className="flex justify-between mb-8 max-w-5xl w-full">
